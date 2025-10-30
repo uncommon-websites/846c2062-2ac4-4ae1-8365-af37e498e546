@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "Zenden Wellness",
+	description: "Build strength and inner peace through inclusive, breath-centered yoga classes for all abilities at our Boonton studio.",
 	image: "/og.png",
-	url: "https://example.com",
+	url: "https://zendenwellness.com",
 	fontFamily: "Inter Variable"
 };
