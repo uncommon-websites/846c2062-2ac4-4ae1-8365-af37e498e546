@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	centered={false}
+	title="Build strength and find inner peace"
+	subtitle="Inclusive, breath-centered yoga classes in Boonton for all abilities. Whether you're stressed, busy, or new to yoga, you belong here."
+	imageSrc="/generated/image-documentary-style-editorial-photograph-o.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Inspired by wellness leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/lululemon.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/calm.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/whoop.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
