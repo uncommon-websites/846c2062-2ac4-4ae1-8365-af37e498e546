@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconHeart from "~icons/lucide/heart";
+	import IconClock from "~icons/lucide/clock";
+	import IconWind from "~icons/lucide/wind";
+	import IconUsers from "~icons/lucide/users";
+	import IconSparkles from "~icons/lucide/sparkles";
+	import IconMapPin from "~icons/lucide/map-pin";
 </script>
 
 <Hero
@@ -26,62 +34,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Your wellness journey starts here"
+	text="Zenden Wellness brings inclusive, breath-centered yoga to busy professionals in Boonton who need stress relief but feel intimidated by traditional studios. Led by our team of 12+ certified instructors, we create a warm, welcoming space where all abilities belong—from complete beginners to experienced practitioners. Whether you join us for gentle restorative sessions or energizing vinyasa flows, you'll discover how yoga's transformative power builds both physical strength and inner peace."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maya Patel",
+			position: "Marketing Director",
+			company: "Boonton",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"I used to spend $180 monthly on private sessions trying to manage stress. Zen Den's 10-class package saved me over $1,200 this year while giving me the same relief in a supportive group setting.",
+			image: "/generated/image-editorial-style-environmental-portrait-o.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Thompson",
+			position: "Financial Advisor",
+			company: "Boonton",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"As someone with a bad back, I was worried yoga would make things worse. Emily's modifications and injury-conscious approach let me build strength safely. No physical therapy bills in 8 months.",
+			image: "/generated/image-editorial-headshot-of-a-black-man-in-bus.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Carmen Rodriguez",
+			position: "Elementary Teacher",
+			company: "Boonton",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The 7:15 AM classes fit perfectly before work. I get my stress relief done in 60 minutes instead of driving 40 minutes each way to the next closest studio. That's 6 hours back in my week.",
+			image: "/generated/image-editorial-environmental-portrait-of-a-hi.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Why choose Zenden Wellness"
+	subtitle="Discover what makes our studio different and why Boonton professionals trust us for their wellness journey"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Yoga for every body",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"No intimidation, no pressure to be flexible or perfect. Our classes welcome all abilities with modifications for every pose, because you know your body best.",
+			icon: IconHeart
 		},
 		{
-			title: "Data Analysis",
+			title: "Classes that fit your schedule",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"From 7:15 AM energizing flows to 10 PM restorative unwind sessions, find the perfect class time that works with your busy professional life.",
+			icon: IconClock
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Breath-centered practice",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Experience our unique approach combining breathwork, meditation, and Emotional Freedom Techniques to release stress and cultivate lasting inner peace.",
+			icon: IconWind
+		},
+		{
+			title: "Expert, specialized instructors",
+			description:
+				"Learn from 12+ certified teachers with diverse backgrounds in Vinyasa, Hatha, prenatal yoga, sound healing, Reiki, and more.",
+			icon: IconUsers
+		},
+		{
+			title: "Holistic wellness integration",
+			description:
+				"Beyond traditional yoga, we weave Ayurvedic wisdom, qigong, sound healing, and art therapy into practices that nurture your whole self.",
+			icon: IconSparkles
+		},
+		{
+			title: "Welcoming Boonton community",
+			description:
+				"Join a warm, supportive local community at 502 Main St where connection and authenticity matter as much as the practice itself.",
+			icon: IconMapPin
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction 
+	title="Your first class is waiting"
+	subtitle="Join us this week"
+	description="Stop letting stress control your schedule. With classes from 7:15 AM to 10 PM, we make it easy to start your yoga journey right here in Boonton. Drop in for just $18, or save with our 5-class package at $85. No flexibility required, no judgment, no intimidation—just a warm welcome and expert guidance. Your mat is ready."
+	imageSrc="/generated/image-a-woman-sits-peacefully-on-a-yoga-mat-in.webp"
+	callsToAction={[
+		{
+			href: "https://zenden-wellness.taramala.co/",
+			label: "Book your first class",
+			variant: "primary"
+		},
+		{
+			href: "mailto:namaste@zendenwellness.com",
+			label: "Ask us anything",
+			variant: "secondary"
+		}
+	]}
+/>
